@@ -11,6 +11,7 @@ export const COLORS = {
     200: "235deg 45% 61%",
     300: "226deg 43% 10%",
   },
+  white: "0deg 0% 100%",
 };
 
 export const WEIGHTS = {
