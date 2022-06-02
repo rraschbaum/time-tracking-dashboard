@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { COLORS } from "../constants";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -15,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    font-family: 'Rubik', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
@@ -34,6 +36,21 @@ const GlobalStyles = createGlobalStyle`
 
   #root, #__next {
     isolation: isolate;
+  }
+
+  html {
+    --color-violet: hsl(${COLORS.violet});
+    --color-orange: hsl(${COLORS.orange});
+    --color-aqua: hsl(${COLORS.aqua});
+    --color-red: hsl(${COLORS.red});
+    --color-green: hsl(${COLORS.green});
+    --color-purple: hsl(${COLORS.purple});
+    --color-yellow: hsl(${COLORS.yellow});
+    --color-blue-100: hsl(${COLORS.blue[100]});
+    --color-blue-200: hsl(${COLORS.blue[200]});
+    --color-blue-300: hsl(${COLORS.blue[300]});
+    --color-blue-400: hsl(${COLORS.blue[400]});
+    --color-white: hslt(${COLORS.white});
   }
 `;
 
