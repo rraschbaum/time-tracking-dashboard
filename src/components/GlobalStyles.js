@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  html, body {
+  html, body, #root {
     height: 100%;
   }
 
@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Rubik', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--color-blue-400);
+    color: var(--color-white);
   }
 
   img, picture, video, canvas, svg {
@@ -50,7 +52,8 @@ const GlobalStyles = createGlobalStyle`
     --color-blue-200: hsl(${COLORS.blue[200]});
     --color-blue-300: hsl(${COLORS.blue[300]});
     --color-blue-400: hsl(${COLORS.blue[400]});
-    --color-white: hslt(${COLORS.white});
+    --color-blue-hover: hsl(${COLORS.blue["hover"]});
+    --color-white: hsl(${COLORS.white});
   }
 `;
 
