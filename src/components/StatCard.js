@@ -46,7 +46,7 @@ const StatCard = ({ title, timeframes, timeframe }) => {
       <ContentCard>
         <TopContent>
           <Category>{title}</Category>
-          <EllipsisIconWrapper>
+          <EllipsisIconWrapper title="more options">
             <EllipsisIcon />
           </EllipsisIconWrapper>
         </TopContent>
